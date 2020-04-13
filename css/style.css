@@ -1,0 +1,277 @@
+/*====================================================== Notes =======================
+ font : 'Montserrat', sans-serif;
+ colors: #fb2274 , #444 ,#fff
+
+================================================*/
+
+/*==================================== General Styles ===============================================*/
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family:'Montserrat', sans-serif;
+}
+.content-space{
+    padding: 100px 0;
+}
+.big-heading{
+    color: #444;
+    font-size: 6rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+.big-p{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #222;
+    max-width: 60%;
+    margin: auto;
+}
+.btn{
+    box-shadow: none !important;
+    outline: none !important;
+}
+/*=============================== Header ===============================*/
+header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url(../img/banner.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.overlay{
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+.navbar{
+    padding: 20px 0;
+    background-color: transparent !important;
+    font-size: 2rem;
+}
+.navbar-brand{
+    font-size: 2.5rem;
+    color: #fff !important;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+a.nav-link{
+    color: #fff !important;
+    margin-left: 3rem;
+    transition: 400ms linear;
+    text-transform: uppercase;
+}
+.nav-link:first-child{
+    margin-left: none;
+}
+.nav-link:hover , .nav-item.active .nav-link{
+    color: #fb2274 !important ;
+}
+.navbar-wh-bg {
+    background: #fff !important;
+    padding: 10px 0;
+    box-shadow: 0 8px 6px -9px #999;
+    /* position: absoulte ; */
+    z-index: 100;
+}
+.navbar-wh-bg .navbar-brand , .navbar-wh-bg .nav-link{
+    color: #444 !important;
+}
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.header-content h1{
+    font-size: 7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.header-content h1 span{
+    color: #fb2274;
+}
+.header-content p{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+ .arrow{
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: mymove 1.5s infinite;
+}
+/* make simple animation of arrow btn*/
+@keyframes mymove {
+    from {
+        bottom: 60px
+    }
+
+    to {
+        bottom: 20px
+    }
+}
+.arrow img{
+    width: 3rem;
+    height: 5rem;
+    cursor: pointer;
+}
+/*=============================== About ===============================*/
+#about .btn{
+    padding: 1rem 2rem;
+    border: 2px solid #fb2274;
+    color: #fb2274;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-top: 3rem;
+    transition: 0.5s ease-in-out;
+}
+#about .btn:hover{
+    background: #fb2274;
+    border: none;
+    color: #fff;
+}
+/*=============================== Services ===============================*/
+#services{
+    background: #f4f4f4;
+}
+.img-wrapper{
+    margin-top: 4rem;
+}
+.img-wrapper img{
+    height: 30rem;
+}
+.content{
+    margin: 2rem 0;
+}
+.content h3{
+    font-weight: 700;
+    color: #444;
+    text-transform: uppercase;
+}
+
+/*=============================== Contact ===============================*/
+
+.right input , .right textarea{
+    display: block;
+    width: 90%;
+    margin: 2rem;
+    padding: 10px;
+    border: 1px solid #f4f4f4;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    color: #444;
+}
+.right textarea{
+    resize: none;
+    height: 12rem;
+}
+.right .btn{
+    background: transparent;
+    padding: 0.7rem 2rem;
+    border: 2px solid #fb2274;
+    color: #fb2274;
+    font-weight: 600;
+    font-size: 2rem;
+    transition: 0.5s linear;
+    display: block;
+    width: 90%;
+    margin: 2rem;
+}
+.right .btn:hover{
+    background: #fb2274;
+    border: none;
+    color: #fff;
+}
+.img-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    z-index: 10;
+    padding: 1rem 2.5rem;
+    color: #444;
+}
+.img-content h5{
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.img-content .underline{
+    display: block;
+    width: 10rem;
+    border: 0.5px solid #444;
+    margin: 1rem 0;
+}
+.img-content p{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.img-content .colored{
+    color: #fb2274;
+}
+.location {
+    background: #fb2274;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -20px;
+}
+.location img{
+    margin: auto;
+    position: absolute;
+    top: 5px;
+    left: 8px;
+}
+footer p{
+    margin: 0;
+    padding: 2rem 0;
+    color: #fb2274;
+    font-size: 2rem;
+}
+
+@media (max-width: 992px){
+    .header-content h1{
+        font-size: 5rem;
+    }
+}
+@media (max-width: 768px){
+    .header-content h1{
+        font-size: 3rem;
+    }
+    .big-heading{
+        font-size: 4rem;
+    }
+    .big-p{
+        max-width: 80%;
+    }
+    .navbar , .navbar-wh-bg{
+        position: absolute;
+        background: #444 !important;
+        color: #fff !important;
+    }
+    .navbar-toggler{
+        border: 1px solid #f4f4f4;
+        margin-right: 20px;
+        border-radius: 5px;
+    }
+}
